@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/face.css" />
+    <title>Identity System</title>
+  </head>
+  <body>
+    <div class="container-body">
+      <header class="system__header">
+        <a href="/index.html" class="system__header__logo">
+          <img src="/assets/img/PTI-Logo2.png" alt="" srcset="" width="15%" />
+        </a>
+        <div class="system__header__ctas">
+          <ul class="system__header__ctas__list">
+            <li>
+              <a href="../signin/">SignIn</a>
+            </li>
+            <li>
+              <a href="/signup.html">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="face__main">
+        <div class="face__main__content">
+          <div class="face__main__content-camera">
+            <p>Camera: front</p>
+            <video
+              id="video"
+              class="rounded-xl"
+              style="border: 2px solid #222"
+              width="300"
+              height="300"
+              autoplay
+              muted
+            ></video>
+          </div>
+          <canvas id="canvas" width="0" height="0"></canvas>
+        </div>
+        <div class="face__main__content-buttons">
+          <button class="face__main__content-button-capture">Take Photo</button>
+          <button class="face__main__content-button-reload">Reload</button>
+        </div>
+      </main>
+
+      <footer class="system__footer">
+        <p>Identity authentication system</p>
+        <p>By Project Group 7</p>
+      </footer>
+    </div>
+  </body>
+
+  <script src="../assets/js/face.js"></script>
+</html>
